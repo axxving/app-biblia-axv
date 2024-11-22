@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './sections/header/Header';
 import { Hero } from './sections/hero/Hero';
 import { About } from './sections/about/About';
+import { Library } from './sections/library/Library';
 
 export const Page = () => {
     const pageStyle = {
@@ -16,6 +17,7 @@ export const Page = () => {
             <Header />
             <Hero />
             <About />
+            <Library />
         </div>
     );
 };
