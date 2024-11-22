@@ -4,6 +4,7 @@ import { Hero } from './sections/hero/Hero';
 import { About } from './sections/about/About';
 import { Library } from './sections/library/Library';
 import { BibleStudies } from './sections/bibleStudies/BibleStudies';
+import { InteractiveResources } from './sections/interactiveResources/InteractiveResources';
 
 export const Page = () => {
     const pageStyle = {
@@ -20,6 +21,7 @@ export const Page = () => {
             <About />
             <Library />
             <BibleStudies />
+            <InteractiveResources />
         </div>
     );
 };
