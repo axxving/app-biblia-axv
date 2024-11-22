@@ -3,6 +3,7 @@ import { Header } from './sections/header/Header';
 import { Hero } from './sections/hero/Hero';
 import { About } from './sections/about/About';
 import { Library } from './sections/library/Library';
+import { BibleStudies } from './sections/bibleStudies/BibleStudies';
 
 export const Page = () => {
     const pageStyle = {
@@ -18,6 +19,7 @@ export const Page = () => {
             <Hero />
             <About />
             <Library />
+            <BibleStudies />
         </div>
     );
 };
