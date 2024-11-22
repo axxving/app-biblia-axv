@@ -6,6 +6,7 @@ import { Library } from './sections/library/Library';
 import { BibleStudies } from './sections/bibleStudies/BibleStudies';
 import { InteractiveResources } from './sections/interactiveResources/InteractiveResources';
 import { Blog } from './sections/blog/Blog';
+import { Contact } from './sections/contact/Contact';
 
 export const Page = () => {
     const pageStyle = {
@@ -24,6 +25,7 @@ export const Page = () => {
             <BibleStudies />
             <InteractiveResources />
             <Blog />
+            <Contact />
         </div>
     );
 };
