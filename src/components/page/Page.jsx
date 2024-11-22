@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './sections/header/Header';
 import { Hero } from './sections/hero/Hero';
+import { About } from './sections/about/About';
 
 export const Page = () => {
     const pageStyle = {
@@ -14,6 +15,7 @@ export const Page = () => {
         <div style={pageStyle}>
             <Header />
             <Hero />
+            <About />
         </div>
     );
 };
