@@ -12,7 +12,7 @@ export const Footer = () => {
                 <div className="row">
                     {/* Logo y mensaje breve */}
                     <div className="col-lg-3 col-md-6 mb-4">
-                        <Slide direction="left" duration={1000}>
+                        <Slide direction="left" duration={1100}>
                             <h5 className="fw-bold">
                                 <span style={{ color: '#6eca4a' }}>Glori</span>
                             </h5>

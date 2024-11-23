@@ -57,6 +57,7 @@ export const Library = () => {
                                             enriquecer tu experiencia.
                                         </p>
                                         <button className="btn btn-outline-success btn-sm">
+                                            <i class="bi bi-eye me-2"></i>
                                             Explorar Modos
                                         </button>
                                     </div>
@@ -84,6 +85,7 @@ export const Library = () => {
                                             búsqueda precisa.
                                         </p>
                                         <button className="btn btn-outline-warning btn-sm">
+                                            <i class="bi bi-search me-2"></i>
                                             Buscar
                                         </button>
                                     </div>
@@ -112,6 +114,7 @@ export const Library = () => {
                                         profundo y tradicional.
                                     </p>
                                     <button className="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-play-circle me-2"></i>
                                         Leer Ahora
                                     </button>
                                 </div>
@@ -128,6 +131,7 @@ export const Library = () => {
                                         los lectores.
                                     </p>
                                     <button className="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-play-circle me-2"></i>
                                         Leer Ahora
                                     </button>
                                 </div>
@@ -145,6 +149,7 @@ export const Library = () => {
                                         Precisión y claridad en cada versículo.
                                     </p>
                                     <button className="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-play-circle me-2"></i>
                                         Leer Ahora
                                     </button>
                                 </div>

@@ -40,6 +40,7 @@ export const BibleStudies = () => {
                                         cuidadosamente diseñadas.
                                     </p>
                                     <button className="btn btn-outline-warning btn-sm">
+                                        <i className="bi bi-question-circle me-2"></i>
                                         Explorar Guías
                                     </button>
                                 </div>
@@ -63,6 +64,7 @@ export const BibleStudies = () => {
                                         tu vida espiritual.
                                     </p>
                                     <button className="btn btn-outline-success btn-sm">
+                                        <i className="bi bi-pencil-square me-2"></i>
                                         Iniciar
                                     </button>
                                 </div>
@@ -86,6 +88,7 @@ export const BibleStudies = () => {
                                         seguir creciendo.
                                     </p>
                                     <button className="btn btn-outline-danger btn-sm">
+                                        <i className="bi bi-bookmark-heart me-2"></i>
                                         Ver Mi Progreso
                                     </button>
                                 </div>
@@ -113,6 +116,7 @@ export const BibleStudies = () => {
                                             Génesis, Salmos o Juan.
                                         </p>
                                         <button className="btn btn-outline-info btn-sm">
+                                            <i class="bi bi-play-circle me-2"></i>
                                             Ver Detalles
                                         </button>
                                     </div>
@@ -137,6 +141,7 @@ export const BibleStudies = () => {
                                             Todo en un formato accesible.
                                         </p>
                                         <button className="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-play-circle me-2"></i>
                                             Explorar Temas
                                         </button>
                                     </div>
