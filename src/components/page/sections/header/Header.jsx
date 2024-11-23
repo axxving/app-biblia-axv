@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = ({
     heroRef,
@@ -16,6 +17,8 @@ export const Header = ({
         width: '100%',
     };
 
+    const navigate = useNavigate();
+
     const handleScroll = ref => {
         if (ref && ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -27,7 +30,10 @@ export const Header = ({
             <header className="shadow bg-light" id="header" style={headerStyle}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light container">
-                        <a className="navbar-brand d-flex align-items-center">
+                        <a
+                            className="navbar-brand d-flex align-items-center"
+                            onClick={() => handleScroll(heroRef)}
+                        >
                             <i className="bi bi-book-half me-3"></i>
                             <span className="fw-bold">Glori</span>
                         </a>
