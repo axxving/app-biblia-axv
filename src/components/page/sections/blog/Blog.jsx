@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 export const Blog = () => {
     const blogPosts = [
@@ -40,59 +41,66 @@ export const Blog = () => {
             <div className="container">
                 {/* Título */}
                 <div className="text-center mb-5">
-                    <h2 className="fw-bold display-6 text-primary">
-                        <span style={{ color: '#6eca4a' }}>Blog</span> Bíblico
-                    </h2>
-                    <p className="lead text-muted">
-                        Explora artículos, reflexiones y entrevistas diseñadas
-                        para profundizar en tu estudio bíblico.
-                    </p>
+                    <Zoom>
+                        <h2 className="fw-bold display-6 text-primary">
+                            <span style={{ color: '#6eca4a' }}>Blog</span>{' '}
+                            Bíblico
+                        </h2>
+                        <p className="lead text-muted">
+                            Explora artículos, reflexiones y entrevistas
+                            diseñadas para profundizar en tu estudio bíblico.
+                        </p>
+                    </Zoom>
                 </div>
 
                 {/* Listado de publicaciones */}
                 <div className="row g-4">
                     {blogPosts.map(post => (
                         <div className="col-lg-4 col-md-6" key={post.id}>
-                            <div className="card border-0 shadow-sm h-100">
-                                <img
-                                    src={post.image}
-                                    className="card-img-top"
-                                    alt={post.title}
-                                    style={{
-                                        height: '200px',
-                                        objectFit: 'cover',
-                                    }}
-                                />
-                                <div className="card-body">
-                                    <span className="badge bg-info mb-2">
-                                        {post.category}
-                                    </span>
-                                    <h5 className="card-title fw-bold">
-                                        {post.title}
-                                    </h5>
-                                    <p className="card-text text-muted">
-                                        {post.excerpt}
-                                    </p>
-                                    <p className="text-muted small">
-                                        {post.date}
-                                    </p>
-                                    <a
-                                        href={`/blog/${post.id}`}
-                                        className="btn btn-outline-primary btn-sm"
-                                    >
-                                        Leer Más
-                                    </a>
+                            <Fade>
+                                <div className="card border-0 shadow h-100">
+                                    <img
+                                        src={post.image}
+                                        className="card-img-top"
+                                        alt={post.title}
+                                        style={{
+                                            height: '200px',
+                                            objectFit: 'cover',
+                                        }}
+                                    />
+                                    <div className="card-body">
+                                        <span className="badge bg-info mb-2">
+                                            {post.category}
+                                        </span>
+                                        <h5 className="card-title fw-bold">
+                                            {post.title}
+                                        </h5>
+                                        <p className="card-text text-muted">
+                                            {post.excerpt}
+                                        </p>
+                                        <p className="text-muted small">
+                                            {post.date}
+                                        </p>
+                                        <a
+                                            href={`/blog/${post.id}`}
+                                            className="btn btn-outline-primary btn-sm"
+                                        >
+                                            Leer Más
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
+                            </Fade>
                         </div>
                     ))}
                 </div>
 
                 {/* Botón para ver más artículos */}
                 <div className="text-center mt-5">
-                    <button className="btn btn-primary btn-lg">
-                        Explorar Todos los Artículos
-                    </button>
+                    <Zoom>
+                        <button className="btn btn-primary btn-lg">
+                            Explorar Todos los Artículos
+                        </button>
+                    </Zoom>
                 </div>
             </div>
         </section>

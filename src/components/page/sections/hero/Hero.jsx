@@ -1,5 +1,4 @@
 import React from 'react';
-import './Hero.css';
 import { Slide } from 'react-awesome-reveal';
 
 export const Hero = () => {
