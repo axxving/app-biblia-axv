@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
-export const Library = () => {
+export const Library = React.forwardRef((props, ref) => {
     return (
-        <section className="py-5 bg-light" id="library">
+        <section className="py-5 bg-light" id="library" ref={ref}>
             <div className="container">
                 {/* Título */}
                 <div className="text-center mb-5">
@@ -160,4 +160,4 @@ export const Library = () => {
             </div>
         </section>
     );
-};
+});

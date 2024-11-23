@@ -2,12 +2,13 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
-export const InteractiveResources = () => {
+export const InteractiveResources = React.forwardRef((props, ref) => {
     return (
         <section
             className="py-5"
             id="interactive-resources"
             style={{ backgroundColor: '#f8f9fa' }}
+            ref={ref}
         >
             <div className="container">
                 {/* Título */}
@@ -124,4 +125,4 @@ export const InteractiveResources = () => {
             </div>
         </section>
     );
-};
+});

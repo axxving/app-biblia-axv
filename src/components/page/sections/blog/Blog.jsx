@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Zoom, Fade } from 'react-awesome-reveal';
 
-export const Blog = () => {
+export const Blog = React.forwardRef((props, ref) => {
     const blogPosts = [
         {
             id: 1,
@@ -37,6 +37,7 @@ export const Blog = () => {
             className="py-5"
             id="blog"
             style={{ backgroundColor: '#f8f9fa' }}
+            ref={ref}
         >
             <div className="container">
                 {/* Título */}
@@ -107,4 +108,4 @@ export const Blog = () => {
             </div>
         </section>
     );
-};
+});

@@ -2,11 +2,24 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-export const Header = () => {
+export const Header = ({
+    heroRef,
+    aboutRef,
+    libraryRef,
+    interactiveResourcesRef,
+    blogRef,
+    contactRef,
+}) => {
     const headerStyle = {
         position: 'fixed',
         top: '0',
         width: '100%',
+    };
+
+    const handleScroll = ref => {
+        if (ref && ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -35,22 +48,56 @@ export const Header = () => {
                         >
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link">Inicio</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() => handleScroll(heroRef)}
+                                    >
+                                        Inicio
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Acerca</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() => handleScroll(aboutRef)}
+                                    >
+                                        Acerca
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Biblioteca</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() => handleScroll(libraryRef)}
+                                    >
+                                        Biblioteca
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Recursos</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() =>
+                                            handleScroll(
+                                                interactiveResourcesRef
+                                            )
+                                        }
+                                    >
+                                        Recursos
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Blog</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() => handleScroll(blogRef)}
+                                    >
+                                        Blog
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Contacto</a>
+                                    <a
+                                        className="nav-link"
+                                        onClick={() => handleScroll(contactRef)}
+                                    >
+                                        Contacto
+                                    </a>
                                 </li>
                             </ul>
                             <div className="d-flex">
