@@ -76,7 +76,7 @@ export const Contact = () => {
                                         type="submit"
                                         className="btn btn-primary w-100"
                                     >
-                                        <i class="bi bi-send me-2"></i>
+                                        <i className="bi bi-send me-2"></i>
                                         Enviar Mensaje
                                     </button>
                                 </form>

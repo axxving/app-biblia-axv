@@ -44,7 +44,7 @@ export const InteractiveResources = () => {
                                         historia bíblica.
                                     </p>
                                     <button className="btn btn-outline-info btn-sm">
-                                        <i class="bi bi-play-circle me-2"></i>
+                                        <i className="bi bi-play-circle me-2"></i>
                                         Ver Mapas
                                     </button>
                                 </div>
@@ -70,7 +70,7 @@ export const InteractiveResources = () => {
                                         entender.
                                     </p>
                                     <button className="btn btn-outline-warning btn-sm">
-                                        <i class="bi bi-play-circle me-2"></i>
+                                        <i className="bi bi-play-circle me-2"></i>
                                         Explorar Cronología
                                     </button>
                                 </div>
@@ -96,7 +96,7 @@ export const InteractiveResources = () => {
                                         términos bíblicos.
                                     </p>
                                     <button className="btn btn-outline-success btn-sm">
-                                        <i class="bi bi-play-circle me-2"></i>
+                                        <i className="bi bi-play-circle me-2"></i>
                                         Consultar Diccionario
                                     </button>
                                 </div>
@@ -115,7 +115,7 @@ export const InteractiveResources = () => {
                                 complementarios, gráficos y esquemas temáticos.
                             </p>
                             <button className="btn btn-primary btn-lg">
-                                <i class="bi bi-play-circle me-3"></i>
+                                <i className="bi bi-play-circle me-3"></i>
                                 Explorar Todos los Recursos
                             </button>
                         </Zoom>

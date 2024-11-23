@@ -116,7 +116,7 @@ export const BibleStudies = () => {
                                             Génesis, Salmos o Juan.
                                         </p>
                                         <button className="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-play-circle me-2"></i>
+                                            <i className="bi bi-play-circle me-2"></i>
                                             Ver Detalles
                                         </button>
                                     </div>
@@ -141,7 +141,7 @@ export const BibleStudies = () => {
                                             Todo en un formato accesible.
                                         </p>
                                         <button className="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-play-circle me-2"></i>
+                                            <i className="bi bi-play-circle me-2"></i>
                                             Explorar Temas
                                         </button>
                                     </div>
