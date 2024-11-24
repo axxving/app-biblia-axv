@@ -107,11 +107,17 @@ export const Header = ({
                                 </li>
                             </ul>
                             <div className="d-flex">
-                                <a className="btn btn-warning btn-sm me-2 d-flex align-items-center">
+                                <a
+                                    className="btn btn-warning btn-sm me-2 d-flex align-items-center"
+                                    onClick={() => navigate('/register')}
+                                >
                                     <i className="bi bi-person-plus me-2"></i>
                                     Registro
                                 </a>
-                                <a className="btn btn-danger btn-sm d-flex align-items-center">
+                                <a
+                                    className="btn btn-danger btn-sm d-flex align-items-center"
+                                    onClick={() => navigate('/login')}
+                                >
                                     <i className="bi bi-box-arrow-in-right me-2"></i>{' '}
                                     Inicio de Sesión
                                 </a>
