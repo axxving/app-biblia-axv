@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
-export const Contact = () => {
+export const Contact = React.forwardRef((props, ref) => {
     return (
-        <section className="py-5 bg-light" id="contact">
+        <section className="py-5 bg-light" id="contact" ref={ref}>
             <div className="container">
                 {/* Título */}
                 <div className="text-center mb-5">
@@ -76,7 +76,7 @@ export const Contact = () => {
                                         type="submit"
                                         className="btn btn-primary w-100"
                                     >
-                                        <i class="bi bi-send me-2"></i>
+                                        <i className="bi bi-send me-2"></i>
                                         Enviar Mensaje
                                     </button>
                                 </form>
@@ -156,4 +156,4 @@ export const Contact = () => {
             </div>
         </section>
     );
-};
+});

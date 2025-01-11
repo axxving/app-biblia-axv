@@ -1,13 +1,13 @@
 import React from 'react';
 import { Slide } from 'react-awesome-reveal';
 
-export const Hero = () => {
+export const Hero = React.forwardRef((props, ref) => {
     const heroStyle = {
         minHeight: '100vh',
     };
 
     return (
-        <section className="bg-light text-center mt-5">
+        <section className="bg-light text-center mt-5" ref={ref}>
             <div
                 className="container d-flex flex-column justify-content-center align-items-center"
                 style={heroStyle}
@@ -102,4 +102,4 @@ export const Hero = () => {
             </div>
         </section>
     );
-};
+});

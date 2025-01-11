@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
-export const BibleStudies = () => {
+export const BibleStudies = React.forwardRef((props, ref) => {
     return (
-        <section className="py-5 bg-light" id="bible-studies">
+        <section className="py-5 bg-light" id="bible-studies" ref={ref}>
             <div className="container">
                 {/* Título */}
                 <div className="text-center mb-5">
@@ -116,7 +116,7 @@ export const BibleStudies = () => {
                                             Génesis, Salmos o Juan.
                                         </p>
                                         <button className="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-play-circle me-2"></i>
+                                            <i className="bi bi-play-circle me-2"></i>
                                             Ver Detalles
                                         </button>
                                     </div>
@@ -141,7 +141,7 @@ export const BibleStudies = () => {
                                             Todo en un formato accesible.
                                         </p>
                                         <button className="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-play-circle me-2"></i>
+                                            <i className="bi bi-play-circle me-2"></i>
                                             Explorar Temas
                                         </button>
                                     </div>
@@ -185,4 +185,4 @@ export const BibleStudies = () => {
             </div>
         </section>
     );
-};
+});

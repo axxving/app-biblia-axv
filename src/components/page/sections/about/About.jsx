@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
-export const About = () => {
+export const About = React.forwardRef((props, ref) => {
     return (
-        <section className="bg-light py-5" id="about">
+        <section className="bg-light py-5" id="about" ref={ref}>
             <div className="container">
                 {/* Título */}
                 <div className="text-center mb-5">
@@ -105,4 +105,4 @@ export const About = () => {
             </div>
         </section>
     );
-};
+});
